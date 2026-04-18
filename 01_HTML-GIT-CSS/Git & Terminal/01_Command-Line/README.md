@@ -50,7 +50,7 @@
 
 ```
 </> Bash
-	/Users/john.smith/Desktop
+	pwd
 ```
 
 ### Create a New Folder
