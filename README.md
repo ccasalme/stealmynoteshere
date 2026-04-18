@@ -1,143 +1,121 @@
-# Steal My Notes Here
-<img width="500" height="500" alt="CCasalme (1)" src="https://github.com/user-attachments/assets/610b898b-2ffb-47f2-af10-67ff321ed169" />
+## README.md
+
+*To see the preview of this [README.md](http://README.md) file and to make it easier for you to read, on your keyboard, type: cmd+shift+v (mac users) or ctrl+shift+v (windows users)*
+
+# What is Command Line?
+
+| 💻 Prerequisite | Basic familiarity with your computer operating system, the basic software you will use to build a website, and file system |
+| --- | --- |
+| 💼 **Learning Outcomes** | • Know what the command line is, what you can do with it<br>• Know the basic keyboard shortcuts (e.g. tab, how to access previous commands)<br>• Know basic commands (e.g. cd, ls, mkdir, touch, code .)<br>• Command options/flags |
+| 🔗 **Reference** | [Command line crash course – Learn web development (MDN)](https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Environment_setup/Command_line#Basic_built-in_terminal_commands) |
+
+## Command Line
+
+- 🤔 Terminal commands are useful ways to navigate between your folders aka directories, quickly and easily.
+- 🤔 The terminal is a text interface for executing text-based programs. Check out my reference above to get a deeper dive!
+- 🤔 Your first assignment is to memorize and get really comfortable in using your Command Line. You will find that you would be using this regularly.
+
+## Open your Terminal and try these out:
 
 
-## What is *Steal My Notes Here*?
+### List
+- 📝 We use *'ls'* (ls stands for list) to **list the contents of the current directory**. Try it out yourself. Go to your Terminal and type *'ls'* then click enter.
 
-This is an open-source repository designed to teach the **foundations of full-stack development**.
+```
+</> Bash
+	ls
+```
 
-It’s built for complete beginners—no prior coding experience required. The only assumption is that you’re comfortable with basic computer skills, such as:
-- Using a web browser  
-- Downloading files  
-- Managing folders  
-- Typing on a keyboard  
 
-If you’re completely new to computers, I recommend starting with this free resource from Microsoft before diving into coding:  
-👉 https://learn.microsoft.com/en-us/training/paths/explore-basic-computer-concepts/
+### Change Directory
+- 📝 We use *'cd'* (cd stands for change directory) to **change directories or file folders**. Try it out yourself. On your terminal, type *'cd Desktop'* to go to your Desktop. Then type *'ls'* to see what you have on your Desktop.
 
----
+```
+</> Bash
+	cd Desktop
+```
 
-This project is a **work in progress**, and I’ll continue updating and improving it over time.
 
-As you learn, you’ll hear about something called `git pull`—that’s how you update your local copy of this repo. Don’t worry if that doesn’t make sense yet. I’ll guide you through everything step by step, including how to set up your computer.
+### Changing Directories
+- 📝 **To move back up to the previous directory or file folder** (or even to get out of said folder), we use *'cd ..'* (note: terminals are case and space sensitive! So in this exercise, make sure it is all lowercase and there is a space between cd and the two periods that followed after it).
 
-You can also visit:  
-👉 **stealmynoteshere.com**  
-where I’ll be sharing additional lessons and guidance along the way 😉
+```
+</> Bash
+	cd ..
+```
 
----
+### Working Directory
 
-## The Goal of *Steal My Notes Here*
+- 📝 **To check our working directory**, we use *‘pwd’*. When we print the working directory (pwd stands for print working directory), it shows us the path. Try it out yourself! It should show along the lines (but not identical): */Users/john.smith/Desktop*
 
-I created this project to make learning more accessible.
+```
+</> Bash
+	/Users/john.smith/Desktop
+```
 
-Education can be expensive—and while there’s nothing wrong with paid courses (teaching takes real effort), many of them are locked behind paywalls. At the same time, a lot of free resources out there lack structure, which can be overwhelming for beginners.
+### Create a New Folder
 
-Even with some experience, it’s easy to feel lost when there’s too much information and no clear path forward.
+- 📝 **To create a new folder inside the Desktop directory**, we navigate into the Desktop directory first (if you’re not there yet), by typing *‘cd Desktop’*, then we use *‘mkdir sandbox’* (mkdir stands for: make directory) to create a new folder called: sandbox. We will be using this directory for your sandbox from now on.
 
-And while tools like AI can be helpful, they aren’t a magic solution. They work best when you already know what to ask, which is often the hardest part when you’re just starting out.
 
----
+**Step one:**
+```
+</> Bash
+	cd Desktop
+```
 
-This repository is meant to bridge that gap.
+**Step two:**
 
-It won’t replace a degree or certification, and it’s not meant to. Think of it as a **prep course**—a way to learn the fundamentals, build confidence, and understand how things fit together.
+```
+</> Bash
+	mkdir sandbox
+```
 
-What you do with that foundation is up to you.
 
-Coding is ultimately about **practice, persistence, and curiosity**.
+### Create a New File
+- 📝 Now that we have a new folder, let’s go into that sandbox directory and **create a new file** by typing *‘cd sandbox’*. Then, we use *‘touch README.md’* to create a new file called: *README.md.*
 
----
 
-## What I Hope for You
+#### **Step one:**
+```
+</> Bash
+	cd sandbox
+```
 
-My goal is simple:
-- To make coding feel less intimidating  
-- To give you a clear starting point  
-- To help you build the confidence to keep going  
+#### **Step two:**
 
-There are many brilliant developers out there, and I’m still learning every day myself. This field is full of people who know more—and that’s a good thing.
+```
+</> Bash
+	touch README.md
+```
 
-Don’t let comparison discourage you.
+### Confirm that the File is Made
 
-Everyone starts somewhere. Everyone struggles at first. And everyone has something valuable to contribute—even you, especially you, as a beginner.
+- 📝 Now, type *‘ls’* again and you will see what is inside that new directory you have created. It should list: *README.md*
 
-We’re all learning from each other.
+```
+</> Bash
+	ls
+```
 
----
+### Open your Code Editor
+- 📝 Now, we’re going to **open that new sandbox folder into your chosen code editor**. I am using *Visual Studio Code*, but the command should be the same for you even if you aren’t using VS.
+ - 📝 Firstly, make sure that you are in the *sandbox* directory by typing on your terminal again ‘pwd’. It should say along the lines: */Users/john.smith/Desktop/sandbox*
 
----
+#### **Step One**
+ ```
+</> Bash
+	pwd
+```
 
-## How to Set Up
 
-### What You Need
+- 📝 Once you are in the sandbox directory (folder), you are going to type *‘code .’* (there is a space between code and the period). This will bring up your sandbox folder into your code editor. Again, we will be using this sandbox folder for your exercises from now on. 😉
 
-- VS Code  
-- Git  
-- A GitHub account  
-- An SSH key connected to GitHub  
-- Basic familiarity with the terminal  
-- Ability to clone a repository  
-- Open the project in VS Code  
+#### **Step two:**
 
-Don’t worry if some of these terms are unfamiliar—I’ll walk you through everything step by step.
+```
+</> Bash
+	code .
+```
 
----
-
-### Baseline Hardware (Beginner-Friendly)
-
-**Minimum (will work, but may feel slow):**
-- **RAM:** 8 GB  
-- **Storage:** 128–256 GB (with at least ~20–30 GB free)  
-- **CPU:** Any modern dual/quad-core from the last ~5–7 years  
-
-**Recommended (more comfortable experience):**
-- **RAM:** 16 GB  
-- **Storage:** 256–512 GB SSD  
-- **CPU:** Modern mid-tier (Apple Silicon, Intel i5 / Ryzen 5 or better)  
-
----
-
-### macOS Guidance
-
-- **Supported:** macOS Monterey (12) or newer  
-- **Recommended:** Ventura (13) or newer  
-- Sonoma (14) is great, but not required  
-
----
-
-### Windows Guidance
-
-**Minimum:**
-- Windows 10 (64-bit)  
-
-**Recommended:**
-- Windows 11  
-
-**CPU Guidelines:**
-- Intel: i5 (8th gen or newer)  
-- AMD: Ryzen 5 (3000 series or newer)  
-
-**Important (for development environments):**
-- Strongly recommend enabling **Windows Subsystem for Linux (WSL)**  
-
-This helps avoid many Windows-specific issues and makes your setup more consistent with macOS and Linux environments.
-
----
-
-### Devices to Avoid
-
-- ❌ Tablets (including iPads, even with keyboards)  
-- ❌ Phones  
-- ⚠️ Chromebooks (can work, but may add extra setup complexity)  
-
----
-
-### CPU Requirements (Simple Rule of Thumb)
-
-> If your computer is from the last 5–7 years and wasn’t the cheapest model available at the time, you’re probably fine.
-
-**Examples:**
-- Apple Silicon: M1, M2, M3  
-- Intel: i5 / i7 (8th gen or newer)  
-- AMD: Ryzen 5 / 7 (3000 series or newer)  
+*All rights reserved @CCASALME Steal My Notes Here 2026 ©*
