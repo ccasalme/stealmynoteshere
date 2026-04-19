@@ -118,4 +118,4 @@
 	code .
 ```
 
-*All rights reserved @CCASALME Steal My Notes Here 2026 ©*
+*© All rights reserved @CCASALME Steal My Notes Here 2026*
